@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/global.css">
+  <script type="module"  src="./components/index.js"  defer ></script>
+  <title>Agency Creative</title>
+</head>
+<body>
+  <header>
+    <logo-header></logo-header>
+    <button class="button-menu">
+      <img src="./assets/images/menu.png" alt="menu hamburger" />
+    </button>
+  </header>
+  <custom-menu id="menu">
+    <header> 
+      <button class="button-menu">
+        <img src="./assets/images/menu.png" alt="menu hamburger">
+      </button>
+    </header>
+    <section>
+      <ul>
+        <li>
+          <button class="button-menu">
+            <a href="#home">Home</a>
+          </button>
+        </li>
+        <li>
+          <button class="button-menu">
+            <a href="#about-us">About</a>
+          </button>
+        </li>
+        <li>
+          <button class="button-menu">
+            <a href="#services">Services</a>
+          </button>
+        </li>
+        <li>
+          <button class="button-menu">
+            <a href="#portfolio">Projects</a>
+          </button>
+        </li>
+      </ul>
+    </section>
+  </custom-menu>
+  <main>
+    <article class="home" id="home">
+        <section>
+        <h1>
+          Make your dream business goal come true
+        </h1>
+        <p>
+          when you need us for improve your business,
+          then come with us to help your business have reach it, you just sit and feel that goal. 
+        </p>
+        <primary-button>Start Project</primary-button>
+      </section>
+      <section>
+        <figure>
+          <img class="img-section" src="assets/images/img-section-1.png" alt="grupo de pessoas sentados em uma mesa">
+        </figure>
+        <article class="mini-card mn-01">
+          <section>
+            <img src="assets/images/star.png" alt="">
+            <p>GREAT PROJECT</p>
+          </section>
+          <h3>800+ Done</h3>
+        </article>
+        <article class="mini-card mn-02">
+          <figure>
+            <img src="assets/images/img-perfil.png" alt="homem branco, vestido socialmente.">
+            <figcaption>
+              <h3>Bill Adams</h3>
+              <p>CEO UpTech</p>
+            </figcaption>
+          </figure>
+          <p>“ This team is really the best in its field,I don't regret working with them, and will come back again thanks “</p>
+        </article>
+      </section>
+    </article>
+    <article class="sections" id="about-us">
+      <section>
+        <h2 class="title-section">About Us</h2>
+        <h3 class="subtitle-section">Our Teammate</h3>
+        <p class="description-section">
+          We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business2
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu neque tempor at ut auctor maecenas,Lorem ipsum d
+        </p>
+        <section class="buttons">
+          <primary-button>About us</primary-button>
+          <secondary-button>
+            <img src="assets/images/play-circle.png" alt="botão play">
+            About us
+          </secondary-button>
+        </section>
+      </section>
+      <figure>
+        <img class="img-section" src="assets/images/img-section-2.png" alt="">
+      </figure>
+    </article>
+    <article class="sections" id="services">
+      <section>
+        <h2 class="title-section">Our Services</h2>
+        <h3 class="subtitle-section">Perfect and Fast Movement</h3>
+        <p class="description-section">
+          We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business
+        </p>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          Read More 
+          <img src="assets/images/arrow-right.png" alt="seta azul apontando para a direita">
+        </a>
+      </section>
+      <section class="card-group">
+        <custom-card>
+          <figure class="figure-01">
+            <img src="assets/images/card-social-media.png" alt="icone  de midias sociais">
+          </figure>
+          <h3>Social Media Management</h3>
+        </custom-card>
+        <custom-card>
+          <figure class="figure-02">
+            <img src="assets/images/card-social-settings.png" alt="icone de configuração">
+          </figure>
+          <h3>Search Engine Opimization</h3>
+        </custom-card>
+        <custom-card>
+          <figure class="figure-03">
+            <img src="assets/images/card-social-design.png" alt="icone de design">
+          </figure>
+          <h3>Design</h3>
+        </custom-card>
+        <custom-card>
+          <figure class="figure-04">
+            <img src="assets/images/card-social-ads.png" alt="ícone de ads">
+          </figure>
+          <h3>Ads</h3>
+        </custom-card>
+      </section>
+    </article>
+    <article class="sections" id="portfolio">
+      <section>
+        <h2 class="title-section">Our Portfolio</h2>
+        <h3 class="subtitle-section">What do we do</h3>
+        <p class="description-section">
+          all projects that we have already done, proven can 
+          help to use more confortable, then can used by
+          client from our business
+        </p>
+      </section>
+      <section class="gallery">
+        <custom-figure src="assets/images/img-section-portfolio-1.png" alt="smartphone sobre uma mesa" caption="Design Furniture App"></custom-figure>
+        <custom-figure src="assets/images/img-section-portfolio-2.png" alt="mão mexendo em um quadro com stitches" caption="Cloud App" highlight=true></custom-figure>
+        <custom-figure src="assets/images/img-section-portfolio-3.png" alt="dois smartphones sobre a mesa com apps abertos" caption="Design Byte App"></custom-figure>
+      </section>
+      <secondary-button>See All Portfolio</secondary-button>
+    </article>
+    <article class="sections testimonial">
+      <section>
+        <h2 class="title-section">Testimonial</h2>
+        <h3 class="subtitle-section">People Talk about us</h3>    
+      </section>
+
+      <card-testimonial visibility='true' src='assets/images/img-testemonial-1.png' alt="foto de perfil Angel Rose" name="Angel Rose" ocupation="Creative Manager" 
+      testimonial='“ There are many variations passages of Lorem Ipsum majority some by words which do not look .”' ></card-testimonial>
+
+      <card-testimonial  src='assets/images/img-testemonial-1.png' alt="foto de perfil Angel Rose" name="Angel Rose" ocupation="Creative Manager" 
+      testimonial='“ There are many variations passages of Lorem Ipsum majority some by words which do not look .”' ></card-testimonial>
+
+      <card-testimonial  src='assets/images/img-testemonial-1.png' alt="foto de perfil Angel Rose" name="Angel Rose" ocupation="Creative Manager" 
+      testimonial='“ There are many variations passages of Lorem Ipsum majority some by words which do not look .”' ></card-testimonial>
+
+    </article>
+    <article class="sections colab">
+      <section class="colab-images">
+        <figure class="colab-img-01">
+          <img src="assets/images/img-colab-01.png" alt="um homem e uma mulher tocando as mãos em comemoração.">
+        </figure>
+        <figure class="colab-img-02">
+          <img src="assets/images/img-colab-02.png" alt="um homem em apresentando um projeto em pé em frente a um grupo de homens sentados.">
+        </figure>
+      </section>
+      <section>
+        <h3 class="subtitle-section">
+          Interesting Collaboration With Us?
+        </h3>
+        <p class="description-section">
+          Help you to reach your business goal
+        </p>
+        <primary-button>
+          Get Started
+        </primary-button>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <section class="logo">
+      <logo-footer></logo-footer>
+    </section>
+    <section>
+      <h4>Terms & policies</h4>
+      <ul>
+        <li>Terms of Service</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </section>
+    <section>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li>Contact Us</li>
+      </ul>
+    </section>
+    <section>
+      <h4>Contact</h4>
+      <p>(+62) 893912392190</p>
+      <p>agencycr@gmail.com</p>
+    </section>
+    <section>
+      <h4>Location</h4>
+      <p>PT Osiris Real Estate Internasional</p>
+      <p>JI. KH. Wahid Hasyim Kel No.10D</p>
+      <p>Jakarta, Indonesia</p>
+      <p>team@OsirisRealEstate.com</p>
+    </section>
+    <section class="social-medias">
+      <section class="icones" >
+        <figure>
+          <img src="assets/images/social-media-facebook.png" alt="ícone facebook">
+        </figure>
+        <figure>
+          <img src="assets/images/social-media-instagram.png" alt="ícone instagram">
+        </figure>
+        <figure>
+          <img src="assets/images/social-media-linkedin.png" alt="ícone linkedin">
+      </figure>
+      <figure>
+        <img src="assets/images/social-media-mail.png" alt="ícone email">
+      </figure>
+      <figure>
+        <img src="assets/images/social-media-twitter.png" alt="ícone twitter">
+      </figure>
+    </section>
+      <hr />
+      <p>Copyright @ 2022 Agency Creative. All Right Reserved</p>
+    </section>
+  </footer>
+  <script src="app.js" ></script>
+</body>
+</html>
