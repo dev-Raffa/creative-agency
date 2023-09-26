@@ -267,9 +267,10 @@ footer{
   flex-wrap: wrap;
   background: rgba(56, 54, 56, 1);
   color: white;
-  gap: 5rem;
+  gap: 8rem;
   padding:2rem;
   font-family: Quicksand;
+  justify-content: space-between;
 }
 
 footer section{
@@ -306,9 +307,12 @@ footer section ul li a{
 
 .social-medias{
   display: flex;
+  width: 100%;
+  align-items: center;
 }
 .social-medias .icones{
   width: 100%;
+  max-width:300px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -326,6 +330,7 @@ footer section ul li a{
   color: white;
   size: 2px;
   width: 100%;
+  max-width: 300px;
   line-height: 5px;
 }
 .social-medias p {
