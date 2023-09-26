@@ -1,6 +1,7 @@
 
 const styleWrap ={
   position: 'absolute',
+  display:'none',
   top:'0',
   right: '-100%',
   width: '100%',
