@@ -1,7 +1,11 @@
 const body = document.querySelector('body')
 const buttonsMenu = document.getElementsByClassName('button-menu')
 const menu = document.getElementById('menu')
-
+const pictureHomeSection = document.getElementById('picture-home-section')
+const pictureAboutUsSection= document.getElementById('picture-about-us-section')
+const testimonials = document.getElementsByClassName('testimonial')
+const picture01ColabSection = document.getElementById('colab-img-01') 
+const picture02ColabSection = document.getElementById('colab-img-02') 
 
 function showMenu(){
   Object.assign(menu.style, {display: null})
@@ -30,3 +34,21 @@ for (let index = 0; index < buttonsMenu.length; index++) {
     showMenu()
   })
 }
+
+function adjustsOnResize(){
+  const width = window.innerWidth
+  if(width>768){
+    pictureHomeSection.setAttribute('src','assets/images/desktop/home-section-image.png')
+    pictureAboutUsSection.setAttribute('src','assets/images/desktop/about-us-section-image.png')
+    picture01ColabSection.setAttribute('src','assets/images/desktop/colab-01-section-image.png')
+    picture02ColabSection.setAttribute('src','assets/images/desktop/colab-02-section-image.png')
+
+    for(let i=1; i < testimonials.length;i++){
+      testimonials[i].setAttribute('style', 'display: block')
+    }
+  }
+}
+
+window.addEventListener('resize', adjustsOnResize) 
+
+window.addEventListener('load', adjustsOnResize)

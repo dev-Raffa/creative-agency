@@ -1,0 +1,94 @@
+@media screen and (min-width: 769px) {
+  html{
+    font-size: 62.5%;
+  }
+  header{
+    padding: 3rem 10%;
+  }
+  header nav{
+    display:block;
+    margin: auto;
+  }
+  header nav ul {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.8rem;
+    font-family: Quicksand;
+    font-weight: 700;
+  }
+  header secondary-button {
+    display: block;
+  }
+  header secondary-button button{
+    width:12rem;
+    height: 4rem;
+  }
+  #btn-menu{
+    display: none;
+  }
+  main{
+    margin-top: 50px;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  main p {
+    font-size: 2rem;
+  }
+  .sections{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #about-us, #services{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  #about-us{
+    flex-direction: row-reverse;
+  }
+  .texts {
+    width: 45%;
+    align-items: baseline;
+  }
+  .texts .title-section, 
+  .texts .subtitle-section,
+  .texts .description-section,
+  .texts p {
+    text-align: left;
+  }
+  .buttons{
+    flex-direction: row;
+  }
+
+  .title-section{
+    font-size: 2.4rem;
+  }
+  .subtitle-section {
+    font-size: 5.5rem;
+  }
+  .description-section{
+    font-size: 2rem;
+  }
+  .card-group{
+    width: 60%;
+    flex-direction: row;
+  }
+  #portfolio .texts{
+    align-items: center;
+  }
+  #portfolio .texts .title-section,
+  #portfolio .texts .subtitle-section,
+  #portfolio .texts .description-section {
+    text-align: center;
+  }
+  .gallery {
+    flex-direction: row;
+  }
+  .colab{
+    flex-direction: row-reverse;
+  }
+  .colab .texts {
+    width: 40%;
+  }
+}

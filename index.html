@@ -4,15 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="/styles/responsibility.css">
   <script type="module"  src="./components/index.js"  defer ></script>
   <title>Agency Creative</title>
 </head>
 <body>
   <header>
     <logo-header></logo-header>
-    <button class="button-menu">
+    <button class="button-menu" id="btn-menu">
       <img src="./assets/images/menu.png" alt="menu hamburger" />
     </button>
+    <nav>
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about-us">About</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#portfolio">Projects</a>
+        </li>
+      </ul>
+    </nav>
+    <secondary-button>
+      contact-us
+    </secondary-button>
   </header>
   <custom-menu id="menu">
     <header> 
@@ -20,7 +40,7 @@
         <img src="./assets/images/menu.png" alt="menu hamburger">
       </button>
     </header>
-    <section>
+    <nav>
       <ul>
         <li>
           <button class="button-menu">
@@ -43,10 +63,10 @@
           </button>
         </li>
       </ul>
-    </section>
+    </nav>
   </custom-menu>
   <main>
-    <article class="home" id="home">
+    <article class="sections" id="home">
       <section>
         <medium-ball color="orange" top="0" right="-25px"></medium-ball>
         <medium-ball color="rgba(68, 133, 255, 0.8)" top=null bottom="0" right=null left="-20px"></medium-ball>
@@ -63,7 +83,7 @@
         <mini-balls color="rgba(246, 36, 36, 1)" amount="6" top="-14px" right="-5px"></mini-balls>
         <mini-balls color="rgba(246, 36, 36, 1)" amount="4" direction="column"></mini-balls>
         <figure>
-          <img class="img-section" src="assets/images/img-section-1.png" alt="grupo de pessoas sentados em uma mesa">
+          <img class="img-section" id="picture-home-section" src="assets/images/desktop/home-section-image.png" alt="grupo de pessoas sentados em uma mesa">
         </figure>
         <article class="mini-card mn-01">
           <section>
@@ -87,7 +107,7 @@
       </section>
     </article>
     <article class="sections" id="about-us">
-      <section>
+      <section class="texts">
         <h2 class="title-section">About Us</h2>
         <h3 class="subtitle-section">Our Teammate</h3>
         <p class="description-section">
@@ -106,11 +126,11 @@
       </section>
       <figure>
         <mini-balls color="rgba(235, 0, 255, 1)" amount="6" left="5px" top="-15px" bottom=null ></mini-balls>
-        <img class="img-section" src="assets/images/img-section-2.png" alt="">
+        <img id="picture-about-us-section" class="img-section" src="assets/images/img-section-2.png" alt="">
       </figure>
     </article>
     <article class="sections" id="services">
-      <section>
+      <section class="texts">
         <h2 class="title-section">Our Services</h2>
         <h3 class="subtitle-section">Perfect and Fast Movement</h3>
         <p class="description-section">
@@ -149,7 +169,7 @@
       </section>
     </article>
     <article class="sections" id="portfolio">
-      <section>
+      <section class="texts">
         <h2 class="title-section">Our Portfolio</h2>
         <h3 class="subtitle-section">What do we do</h3>
         <p class="description-section">
@@ -170,27 +190,29 @@
         <h2 class="title-section">Testimonial</h2>
         <h3 class="subtitle-section">People Talk about us</h3>    
       </section>
+      <section class="testimonials">
+        <card-testimonial visibility='true' src='assets/images/img-testemonial-1.png' alt="foto de perfil Angel Rose" name="Angel Rose" ocupation="Creative Manager" 
+        testimonial='“ There are many variations passages of Lorem Ipsum majority some by words which do not look .”' ></card-testimonial>
 
-      <card-testimonial visibility='true' src='assets/images/img-testemonial-1.png' alt="foto de perfil Angel Rose" name="Angel Rose" ocupation="Creative Manager" 
-      testimonial='“ There are many variations passages of Lorem Ipsum majority some by words which do not look .”' ></card-testimonial>
+        <card-testimonial  src='assets/images/img-testemonial-1.png' alt="foto de perfil Angel Rose" name="Angel Rose" ocupation="Creative Manager" 
+        testimonial='“ There are many variations passages of Lorem Ipsum majority some by words which do not look .”' 
+        class="testimonial"></card-testimonial>
 
-      <card-testimonial  src='assets/images/img-testemonial-1.png' alt="foto de perfil Angel Rose" name="Angel Rose" ocupation="Creative Manager" 
-      testimonial='“ There are many variations passages of Lorem Ipsum majority some by words which do not look .”' ></card-testimonial>
-
-      <card-testimonial  src='assets/images/img-testemonial-1.png' alt="foto de perfil Angel Rose" name="Angel Rose" ocupation="Creative Manager" 
-      testimonial='“ There are many variations passages of Lorem Ipsum majority some by words which do not look .”' ></card-testimonial>
-
+        <card-testimonial  src='assets/images/img-testemonial-1.png' alt="foto de perfil Angel Rose" name="Angel Rose" ocupation="Creative Manager" 
+        testimonial='“ There are many variations passages of Lorem Ipsum majority some by words which do not look .”' 
+        class="testimonial"></card-testimonial>
+      </section>
     </article>
     <article class="sections colab">
       <section class="colab-images">
-        <figure class="colab-img-01">
+        <figure id="colab-img-01">
           <img src="assets/images/img-colab-01.png" alt="um homem e uma mulher tocando as mãos em comemoração.">
         </figure>
-        <figure class="colab-img-02">
+        <figure id="colab-img-02">
           <img src="assets/images/img-colab-02.png" alt="um homem em apresentando um projeto em pé em frente a um grupo de homens sentados.">
         </figure>
       </section>
-      <section>
+      <section class="texts">
         <h3 class="subtitle-section">
           Interesting Collaboration With Us?
         </h3>

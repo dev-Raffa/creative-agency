@@ -19,6 +19,14 @@ header {
   padding: 3.5rem  5%;
 }
 
+header nav {
+  display: none;
+}
+
+header secondary-button{
+  display: none;
+}
+
 button {
  cursor: pointer;
  background-color: transparent;
@@ -74,7 +82,8 @@ figure {
 }
 
 .sections {
-  padding: 2rem 0;
+  padding: 4rem 0;
+  gap: 8rem;
 }
 
 .img-section {
@@ -228,7 +237,10 @@ custom-card h3 {
   flex-wrap: wrap;
   gap: 5rem;
 }
-
+.testimonials {
+  display: flex;
+  flex-direction: row;
+}
 custom-figure {
   max-width: 95vw;
   margin: 0;
@@ -244,21 +256,21 @@ custom-figure {
   max-width: 320px;
 }
 
-.colab-img-01{
+#colab-img-01{
   position: absolute;
   bottom: 0;
   left: 1px;
   width: 65%;
   z-index: 2;
 }
-.colab-img-02 {
+#colab-img-02 {
   position: absolute;
   top: 0;
   right: 0;
   width: 55%;
 }
 
-.colab-img-01 img, .colab-img-02 img{
+#colab-img-01 img, #colab-img-02 img{
   width: 100%;
 }
 

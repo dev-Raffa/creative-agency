@@ -11,9 +11,11 @@ export class Testimonial extends HTMLElement {
     this.ocupation = this.getAttribute('ocupation')
     this.testimonial = this.getAttribute('testimonial')
     
-    if(this.getAttribute('visibility')){ 
-      this.build() 
+    if(!this.getAttribute('visibility')){ 
+      Object.assign(this.style, {display:'none'})
     }
+    
+    this.build() 
 
   }
 
