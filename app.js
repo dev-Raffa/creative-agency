@@ -37,7 +37,7 @@ for (let index = 0; index < buttonsMenu.length; index++) {
 
 function adjustsOnResize(){
   const width = window.innerWidth
-  if(width>768){
+  if(width>900){
     pictureHomeSection.setAttribute('src','assets/images/desktop/home-section-image.png')
     pictureAboutUsSection.setAttribute('src','assets/images/desktop/about-us-section-image.png')
     picture01ColabSection.setAttribute('src','assets/images/desktop/colab-01-section-image.png')
@@ -46,7 +46,7 @@ function adjustsOnResize(){
     for(let i=1; i < testimonials.length;i++){
       testimonials[i].setAttribute('style', 'display: block')
     }
-  }else if(width<769){
+  }else if(width<=900){
     for(let i=1; i < testimonials.length;i++){
       testimonials[i].setAttribute('style', 'display: none')
     }
