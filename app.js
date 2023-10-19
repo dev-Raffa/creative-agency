@@ -52,7 +52,7 @@ function adjustsOnResize(){
     
     for(let i=1; i < testimonials.length;i++){
       obj = testimonial[i]
-      console.log()
+      console.log(obj)
       testimonials[i].setAttribute('style', 'display: none;')
     }
   }
