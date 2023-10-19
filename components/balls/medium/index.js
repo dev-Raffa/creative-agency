@@ -36,7 +36,6 @@ export class MediumBall extends HTMLElement {
 
     const ball = document.createElement('div')
     Object.assign(ball.style, styles.ball)
-    console.log(ball)
 
     this.appendChild(ball)
   }
