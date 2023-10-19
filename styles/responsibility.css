@@ -72,7 +72,6 @@
   }
   .card-group{
     width: 60%;
-    flex-direction: row;
   }
   #portfolio .texts{
     align-items: center;

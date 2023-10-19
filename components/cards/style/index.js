@@ -2,6 +2,7 @@
 const styleWrap = {
   boxSizing: 'border-box',
   display: 'flex',
+  flexDirection: "column",
   flexWrap: 'wrap',
   alignItems:'center',
   justifyContent: 'center',
