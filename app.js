@@ -51,8 +51,9 @@ function adjustsOnResize(){
   if(width<=900){
     
     for(let i=1; i < testimonials.length;i++){
-      
+      console.log(testimonials[i].getAttribute('style'))
       testimonials[i].toggleAttribute('style')
+      console.log(testimonials[i].getAttribute('style'))
     }
   }
 }
