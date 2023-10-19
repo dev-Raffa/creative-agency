@@ -51,6 +51,8 @@ function adjustsOnResize(){
   if(width<=900){
     console.log('menor que 900px')
     for(let i=1; i < testimonials.length;i++){
+      obj = testimonial[i]
+      Object.assign(testimonial.style, {'display: none;'})
       testimonials[i].setAttribute('style', 'display: none;')
     }
   }
