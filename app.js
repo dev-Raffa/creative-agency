@@ -44,14 +44,14 @@ function adjustsOnResize(){
     picture02ColabSection.setAttribute('src','assets/images/desktop/colab-02-section-image.png')
 
     for(let i=1; i < testimonials.length;i++){
-      testimonials[i].setAttribute('style', 'display: block')
+      testimonials[i].setAttribute('style', 'display: block;')
     }
   }
 
   if(width<=900){
     console.log('menor que 900px')
     for(let i=1; i < testimonials.length;i++){
-      testimonials[i].setAttribute('style', 'display: none')
+      testimonials[i].setAttribute('style', 'display: none;')
     }
   }
 }
