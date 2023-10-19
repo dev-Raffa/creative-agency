@@ -46,7 +46,10 @@ function adjustsOnResize(){
     for(let i=1; i < testimonials.length;i++){
       testimonials[i].setAttribute('style', 'display: block')
     }
-  }else if(width<=900){
+  }
+
+  if(width<=900){
+    console.log('menor que 900px')
     for(let i=1; i < testimonials.length;i++){
       testimonials[i].setAttribute('style', 'display: none')
     }
