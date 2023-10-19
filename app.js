@@ -46,6 +46,10 @@ function adjustsOnResize(){
     for(let i=1; i < testimonials.length;i++){
       testimonials[i].setAttribute('style', 'display: block')
     }
+  }else if(width<769){
+    for(let i=1; i < testimonials.length;i++){
+      testimonials[i].setAttribute('style', 'display: none')
+    }
   }
 }
 
