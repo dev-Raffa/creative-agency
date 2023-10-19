@@ -191,8 +191,8 @@ figure {
 }
 
 .card-group {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(265px, 1fr));
   gap: 5rem;
   padding: 3rem 0;
 }

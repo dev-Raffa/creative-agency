@@ -83,6 +83,7 @@
   }
   .gallery {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
   .colab{
     flex-direction: row-reverse;
