@@ -234,7 +234,7 @@ custom-card h3 {
 
 .gallery {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 5rem;
 }
 .testimonials {

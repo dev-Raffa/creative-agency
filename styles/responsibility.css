@@ -83,14 +83,17 @@
   #portfolio .texts .description-section {
     text-align: center;
   }
-  .gallery {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
+ 
   .colab{
     flex-direction: row-reverse;
   }
   .colab .texts {
     width: 40%;
+  }
+}
+
+@media screen and (min-width: 950px){
+  .gallery {
+    flex-direction: row;
   }
 }
