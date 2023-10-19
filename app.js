@@ -52,7 +52,7 @@ function adjustsOnResize(){
     
     for(let i=1; i < testimonials.length;i++){
       console.log(testimonials[i].getAttribute('style'))
-      testimonials[i].toggleAttribute('style')
+      testimonials[i].setAttribute('style', 'display: none;')
       console.log(testimonials[i].getAttribute('style'))
     }
   }
