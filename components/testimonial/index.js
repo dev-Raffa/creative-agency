@@ -4,7 +4,8 @@ export class Testimonial extends HTMLElement {
   static observedAttributes = ["show"]
   constructor(){
     super()
-    
+
+    this.render = false
     this.profilePicture = this.getAttribute('src')
     this.pictureAlt = this.getAttribute('pictureAlt')
     this.name = this.getAttribute('name')
@@ -64,12 +65,14 @@ export class Testimonial extends HTMLElement {
       this.wrap.appendChild(profileWrap)
       this.wrap.appendChild(testimonialwrap)
       Object.assign(this.wrap.style, styles.wrap)
-      
+
       this.shadow = this.attachShadow({mode: 'open'})     
       this.shadow.appendChild(this.wrap)
+      
+      this.render = true
   }
 
   destroy(){
-   console.log(this.attachShadow)
+   this.render && console.log(this.shadow)
   }
 }
