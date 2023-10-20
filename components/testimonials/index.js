@@ -9,11 +9,14 @@ export class Testimonial extends HTMLElement {
 
   connectedCallback() {
     let testimonials = Math.floor(window.innerWidth / 300)
+    console.log(testimonials)
     
     if(testimonials>3){
+      console.log('testimonials é maior que 3')
       testimonials = 3
     }
-    for(let i; i<= testimonials; i++){
+    for(let i=0; i<= testimonials; i++){
+      console.log(`construindo ${i}`)
       this.build()
     }
     
@@ -58,7 +61,7 @@ export class Testimonial extends HTMLElement {
       linkStyles.setAttribute('src', 'components/testimonials/style/styles.css')
 
       this.shadow.appendChild(this.wrap)
-      
+      console.log('terminou')
   }
 
 }
