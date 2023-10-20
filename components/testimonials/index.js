@@ -8,9 +8,18 @@ export class Testimonial extends HTMLElement {
   }
 
   connectedCallback() {
+    const linkStyles = document.createElement('link')
+    linkStyles.setAttribute('rel', 'stylesheet')
+    linkStyles.setAttribute('src', 'components/testimonials/style/styles.css')
+    this.shadow.appendChild(linkStyles)
+
     let testimonials = Math.floor(window.innerWidth / 300)
     console.log(testimonials)
     
+    if(testimonials < 1 ){
+      testimonials = 1
+    }
+
     if(testimonials>3){
       console.log('testimonials é maior que 3')
       testimonials = 3
@@ -56,11 +65,6 @@ export class Testimonial extends HTMLElement {
       wrap.appendChild(profileWrap)
       wrap.appendChild(testimonialwrap)
 
-      const linkStyles = document.createElement('link')
-      linkStyles.setAttribute('rel', 'stylesheet')
-      linkStyles.setAttribute('src', 'components/testimonials/style/styles.css')
-
-      this.shadow.appendChild(linkStyles)
       this.shadow.appendChild(wrap)
       console.log('terminou')
   }
