@@ -5,6 +5,7 @@ export class Card extends HTMLElement {
 
   constructor(){
     super()
+    this.isShow = this.hasAttribute('isShow')
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -14,7 +15,7 @@ export class Card extends HTMLElement {
   }
   
   connectedCallback() {
-    console.log(this.hasAttribute('isShow'))
+    console.log(this.isShow)
     /*
     if(this.getAttribute('isShow')){
       Object.assign(this.style, {display: 'block'})
