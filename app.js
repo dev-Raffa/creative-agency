@@ -3,7 +3,7 @@ const buttonsMenu = document.getElementsByClassName('button-menu')
 const menu = document.getElementById('menu')
 const pictureHomeSection = document.getElementById('picture-home-section')
 const pictureAboutUsSection= document.getElementById('picture-about-us-section')
-const testimonials = document.getElementsByClassName('testimonial')
+const testimonials = document.getElementById('testimonials')
 const picture01ColabSection = document.getElementById('colab-img-01') 
 const picture02ColabSection = document.getElementById('colab-img-02') 
 
@@ -37,23 +37,28 @@ for (let index = 0; index < buttonsMenu.length; index++) {
 
 function adjustsOnResize(){
   const width = window.innerWidth
-  if(width>900){
+  if(width>950){
     pictureHomeSection.setAttribute('src','assets/images/desktop/home-section-image.png')
     pictureAboutUsSection.setAttribute('src','assets/images/desktop/about-us-section-image.png')
     picture01ColabSection.setAttribute('src','assets/images/desktop/colab-01-section-image.png')
     picture02ColabSection.setAttribute('src','assets/images/desktop/colab-02-section-image.png')
 
-    for(let i=1; i < testimonials.length;i++){
-      testimonials[i].setAttribute('show', true)
+    for(let i=1; i < 3;i++){
+      const card =document.createElement('card-testimonial')
+      card.setAttribute('src', 'ssets/images/img-testemonial-1.png')
+      card.setAttribute('alt', 'foto de perfil Angel Rose')
+      card.setAttribute('name', 'Angel Rose')
+      card.setAttribute('ocupation','Creative Manager')
+      card.setAttribute('testimonial','“ There are many variations passages of Lorem Ipsum majority some by words which do not look .”')
+      testimonials.appendChild(card)
     }
   }
 
   if(width<=900){
     
-    for(let i=1; i < testimonials.length;i++){
+    for(let i=1; i < 3;i++){
       
-      testimonials[i].removeAttribute('show')
-      
+      testimonials.removeChild('card-testimonial')   
     }
   }
 }
