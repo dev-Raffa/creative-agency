@@ -20,7 +20,7 @@ export class Testimonial extends HTMLElement {
       `Attribute ${name} has changed from ${oldValue} to ${newValue}.`,
     );
     if (newValue != oldValue & name==='show'){
-      newValue == true ? this.build() : this.destroy()
+      this.hasAttribute('show') ? this.build() : this.destroy()
     }
   }
   
@@ -71,6 +71,7 @@ export class Testimonial extends HTMLElement {
   }
 
   destroy(){
-   this.wrap.remove()
+   const elem = this.wrap
+   console.log(elem)
   }
 }
