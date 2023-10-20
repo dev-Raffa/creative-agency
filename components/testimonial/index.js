@@ -14,16 +14,15 @@ export class Testimonial extends HTMLElement {
 
   }
 
-  /*
+  
   attributeChangedCallback(name, oldValue, newValue) {
     console.log(
       `Attribute ${name} has changed from ${oldValue} to ${newValue}.`,
     );
   }
-  */
+  
 
   connectedCallback() {
-    console.log(this.hasAttribute('isShow'))
     if(this.hasAttribute('isShow')){
 
       const ocupation = document.createElement('p')
