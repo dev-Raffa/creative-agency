@@ -13,7 +13,7 @@ export class Card extends HTMLElement {
     if(this.getAttribute('isShow')){
       Object.assign(this.style, {display: 'block'})
     }*/
-    
+    /*
     this.shadow =  this.attachShadow({mode: "open"})
     const slot = document.createElement('slot')
     
@@ -23,6 +23,6 @@ export class Card extends HTMLElement {
     wrap.appendChild(slot)
     
     this.shadow.appendChild(wrap)
-    
+    */
   }
 }
