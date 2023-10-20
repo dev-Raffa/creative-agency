@@ -6,29 +6,23 @@ export class Card extends HTMLElement {
   constructor(){
     super()
   }
-
-  attributeChangedCallback(name, oldValue, newValue) {
-    console.log(
-      `Attribute ${name} has changed from ${oldValue} to ${newValue}.`,
-    );
-  }
   
   connectedCallback() {
-    console.log(this)
     /*
     if(this.getAttribute('isShow')){
       Object.assign(this.style, {display: 'block'})
     }*/
-
+    
     this.shadow =  this.attachShadow({mode: "open"})
     const slot = document.createElement('slot')
-
+    
     const wrap =  document.createElement('article')
     
     Object.assign(wrap.style, styles.wrap)
     wrap.appendChild(slot)
-
+    
     this.shadow.appendChild(wrap)
     
+    console.log(this)
   }
 }
