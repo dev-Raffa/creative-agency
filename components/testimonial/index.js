@@ -11,12 +11,6 @@ export class Testimonial extends HTMLElement {
     this.name = this.getAttribute('name')
     this.ocupation = this.getAttribute('ocupation')
     this.testimonial = this.getAttribute('testimonial')
-    
-    if(!this.getAttribute('visibility')){ 
-      Object.assign(this.style, {display:'none'})
-    }
-    
-    this.build() 
 
   }
 
@@ -29,6 +23,7 @@ export class Testimonial extends HTMLElement {
   */
 
   connectedCallback() {
+    console.log(this.hasAttribute('isShow'))
     if(this.hasAttribute('isShow')){
 
       const ocupation = document.createElement('p')
