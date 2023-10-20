@@ -5,7 +5,7 @@ export class Testimonial extends HTMLElement {
   constructor(){
     super()
 
-    this.shadow = this.attachShadow({mode: 'open'})
+    
     this.profilePicture = this.getAttribute('src')
     this.pictureAlt = this.getAttribute('pictureAlt')
     this.name = this.getAttribute('name')
@@ -24,6 +24,7 @@ export class Testimonial extends HTMLElement {
 
   connectedCallback() {
     if(this.hasAttribute('isShow')){
+      this.shadow = this.attachShadow({mode: 'open'})
 
       const ocupation = document.createElement('p')
       ocupation.innerText = this.ocupation
