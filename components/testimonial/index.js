@@ -72,6 +72,6 @@ export class Testimonial extends HTMLElement {
   }
 
   destroy(){
-    document.removeChild(this)
+    this.shadow.removeChild('article')
   }
 }
