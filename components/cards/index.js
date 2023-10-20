@@ -1,14 +1,20 @@
 import { styles } from "./style/index.js"
 
 export class Card extends HTMLElement {
+  static observeAttributes = ['isShow']
+
   constructor(){
     super()
-
-    this.shadow =  this.attachShadow({mode: "open"})
-    this.build()
   }
 
-  build() {
+  attributeChangedCallback(name, oldValue, newValue) {
+    console.log(
+      `Attribute ${name} has changed from ${oldValue} to ${newValue}.`,
+    );
+  }
+  
+  connectedCallback() {
+    this.shadow =  this.attachShadow({mode: "open"})
     const slot = document.createElement('slot')
 
     const wrap =  document.createElement('article')
