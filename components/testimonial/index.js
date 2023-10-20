@@ -31,8 +31,6 @@ export class Testimonial extends HTMLElement {
     }
   }
   build() {
-    this.shadow = this.attachShadow({mode: 'open'})
-
       const ocupation = document.createElement('p')
       ocupation.innerText = this.ocupation
       Object.assign(ocupation.style, styles.profile.description.ocupation)
@@ -63,15 +61,16 @@ export class Testimonial extends HTMLElement {
       testimonialwrap.innerText = this.testimonial
       Object.assign( testimonialwrap.style, styles.testimonial)
       
-      const wrap = document.createElement('article')
-      wrap.appendChild(profileWrap)
-      wrap.appendChild(testimonialwrap)
-      Object.assign(wrap.style, styles.wrap)
+      this.wrap = document.createElement('article')
+      this.wrap.appendChild(profileWrap)
+      this.wrap.appendChild(testimonialwrap)
+      Object.assign(this.wrap.style, styles.wrap)
       
-      this.shadow.appendChild(wrap)
+      this.shadow = this.attachShadow({mode: 'open'})     
+      this.shadow.appendChild(this.wrap)
   }
 
   destroy(){
-    this.shadow.removeChild('article')
+   this.wrap.remove() 
   }
 }
