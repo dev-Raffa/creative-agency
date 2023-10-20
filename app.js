@@ -3,7 +3,6 @@ const buttonsMenu = document.getElementsByClassName('button-menu')
 const menu = document.getElementById('menu')
 const pictureHomeSection = document.getElementById('picture-home-section')
 const pictureAboutUsSection= document.getElementById('picture-about-us-section')
-const testimonials = document.getElementsByClassName('testimonial')
 const picture01ColabSection = document.getElementById('colab-img-01') 
 const picture02ColabSection = document.getElementById('colab-img-02') 
 
@@ -42,20 +41,8 @@ function adjustsOnResize(){
     pictureAboutUsSection.setAttribute('src','assets/images/desktop/about-us-section-image.png')
     picture01ColabSection.setAttribute('src','assets/images/desktop/colab-01-section-image.png')
     picture02ColabSection.setAttribute('src','assets/images/desktop/colab-02-section-image.png')
-
-    for(let i=1; i < testimonials.length;i++){
-      testimonials[i].setAttribute('show', "true")
-    }
   }
 
-  if(width<=900){
-    
-    for(let i=1; i < testimonials.length;i++){
-
-      testimonials[i].removeAttribute('show')
-
-    }
-  }
 }
 
 window.addEventListener('resize', adjustsOnResize) 
