@@ -14,10 +14,15 @@ export class Card extends HTMLElement {
   }
   
   connectedCallback() {
+    if(this.setAttribute('isShow')){
+      Object.assign(this.style, {display: 'block'})
+    }
+    
     this.shadow =  this.attachShadow({mode: "open"})
     const slot = document.createElement('slot')
 
     const wrap =  document.createElement('article')
+    
     Object.assign(wrap.style, styles.wrap)
     wrap.appendChild(slot)
 
