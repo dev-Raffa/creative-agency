@@ -19,12 +19,19 @@ export class Testimonial extends HTMLElement {
     console.log(
       `Attribute ${name} has changed from ${oldValue} to ${newValue}.`,
     );
+    if (newValue != oldValue & name==='show'){
+      newValue == 'true' ? this.build() : this.disconnectedCallback()
+    }
   }
   
 
   connectedCallback() {
     if(this.hasAttribute('show')){
-      this.shadow = this.attachShadow({mode: 'open'})
+      this.build()
+    }
+  }
+  build() {
+    this.shadow = this.attachShadow({mode: 'open'})
 
       const ocupation = document.createElement('p')
       ocupation.innerText = this.ocupation
@@ -62,6 +69,5 @@ export class Testimonial extends HTMLElement {
       Object.assign(wrap.style, styles.wrap)
       
       this.shadow.appendChild(wrap)
-    }
   }
 }
