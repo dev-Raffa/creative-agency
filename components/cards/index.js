@@ -14,7 +14,7 @@ export class Card extends HTMLElement {
   }
   
   connectedCallback() {
-    console.log(this.getAttribute('isShow'))
+    console.log(this.hasAttribute('isShow'))
     /*
     if(this.getAttribute('isShow')){
       Object.assign(this.style, {display: 'block'})
