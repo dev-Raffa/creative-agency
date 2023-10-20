@@ -11,7 +11,7 @@ export class Testimonial extends HTMLElement {
     const linkStyles = document.createElement('link')
     linkStyles.setAttribute('rel', 'stylesheet')
     linkStyles.setAttribute('href', './components/testimonials/style/styles.css')
-    this.shadow.appendChild(linkStyles)
+    this.appendChild(linkStyles)
 
     let testimonials = Math.floor(window.innerWidth / 300)
     console.log(testimonials)
@@ -58,7 +58,7 @@ export class Testimonial extends HTMLElement {
       profileWrap.appendChild(descriptionWrap)
       
       const testimonialwrap = document.createElement('p')
-      testimonialwrap.classList.add('testimonial-tex')
+      testimonialwrap.classList.add('testimonial-text')
       testimonialwrap.innerText = this.getAttribute('testimonial')
       
       const wrap = document.createElement('article')
