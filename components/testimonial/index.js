@@ -11,6 +11,7 @@ export class Testimonial extends HTMLElement {
     this.name = this.getAttribute('name')
     this.ocupation = this.getAttribute('ocupation')
     this.testimonial = this.getAttribute('testimonial')
+    this.shadow = this.attachShadow({mode: 'open'})  
 
   }
 
@@ -66,7 +67,7 @@ export class Testimonial extends HTMLElement {
       this.wrap.appendChild(testimonialwrap)
       Object.assign(this.wrap.style, styles.wrap)
 
-      this.shadow = this.attachShadow({mode: 'open'})     
+         
       this.shadow.appendChild(this.wrap)
       
       this.render = true
