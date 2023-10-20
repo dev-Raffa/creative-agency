@@ -19,7 +19,7 @@ export class Testimonial extends HTMLElement {
       `Attribute ${name} has changed from ${oldValue} to ${newValue}.`,
     );
     if (newValue != oldValue & name==='show'){
-      this.connectedCallback()
+      this.hasAttribute('show') ? this.build() : this.destroy()
     }
   }
   
@@ -69,4 +69,7 @@ export class Testimonial extends HTMLElement {
       this.shadow.appendChild(this.wrap)
   }
 
+  destroy(){
+   console.log(this.shadow)
+  }
 }
