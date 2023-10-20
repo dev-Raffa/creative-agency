@@ -44,7 +44,7 @@ function adjustsOnResize(){
     picture02ColabSection.setAttribute('src','assets/images/desktop/colab-02-section-image.png')
 
     for(let i=1; i < testimonials.length;i++){
-      testimonials[i].setAttribute('isShow', true)
+      testimonials[i].setAttribute('isShow')
     }
   }
 
@@ -52,7 +52,7 @@ function adjustsOnResize(){
     
     for(let i=1; i < testimonials.length;i++){
       console.log(testimonials[i].getAttribute('isShow'))
-      testimonials[i].toggleAttribute('isShow')
+      testimonials[i].removeAttribute('isShow')
       console.log(testimonials[i].getAttribute('isShow'))
     }
   }
