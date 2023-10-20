@@ -10,7 +10,7 @@ export class Testimonial extends HTMLElement {
   connectedCallback() {
     const linkStyles = document.createElement('link')
     linkStyles.setAttribute('rel', 'stylesheet')
-    linkStyles.setAttribute('src', './components/testimonials/style/styles.css')
+    linkStyles.setAttribute('href', './components/testimonials/style/styles.css')
     this.shadow.appendChild(linkStyles)
 
     let testimonials = Math.floor(window.innerWidth / 300)
