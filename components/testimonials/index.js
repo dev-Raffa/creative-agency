@@ -10,7 +10,7 @@ export class Testimonial extends HTMLElement {
   connectedCallback() {
     const linkStyles = document.createElement('link')
     linkStyles.setAttribute('rel', 'stylesheet')
-    linkStyles.setAttribute('src', 'components/testimonials/style/styles.css')
+    linkStyles.setAttribute('src', './components/testimonials/style/styles.css')
     this.shadow.appendChild(linkStyles)
 
     let testimonials = Math.floor(window.innerWidth / 300)
@@ -24,7 +24,7 @@ export class Testimonial extends HTMLElement {
       console.log('testimonials é maior que 3')
       testimonials = 3
     }
-    for(let i=0; i<= testimonials; i++){
+    for(let i=1; i<= testimonials; i++){
       console.log(`construindo ${i}`)
       this.build()
     }
