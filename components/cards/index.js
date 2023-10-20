@@ -8,6 +8,7 @@ export class Card extends HTMLElement {
   }
   
   connectedCallback() {
+    console.log(this)
     /*
     if(this.getAttribute('isShow')){
       Object.assign(this.style, {display: 'block'})
@@ -23,6 +24,5 @@ export class Card extends HTMLElement {
     
     this.shadow.appendChild(wrap)
     
-    console.log(this)
   }
 }
