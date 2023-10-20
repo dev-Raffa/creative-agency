@@ -19,12 +19,7 @@ export class Testimonial extends HTMLElement {
       `Attribute ${name} has changed from ${oldValue} to ${newValue}.`,
     );
     if (newValue != oldValue & name==='show'){
-      this.hasAttribute('show') ? 
-      //this.build()
-      console.log('é igual') 
-      : 
-      console.log('é diferente')
-      //this.destroy()
+      this.hasAttribute('show') ? this.build() : this.destroy()
     }
   }
   
@@ -75,6 +70,6 @@ export class Testimonial extends HTMLElement {
   }
 
   destroy(){
-   console.log(this.shadow)
+   console.log(this.attachShadow)
   }
 }
