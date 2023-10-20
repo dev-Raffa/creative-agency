@@ -9,11 +9,6 @@
   font-family: 'Quicksand'; 
 }
 
-testemonials-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 article {
   display: flex;

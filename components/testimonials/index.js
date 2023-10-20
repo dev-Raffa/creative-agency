@@ -4,9 +4,18 @@ export class Testimonial extends HTMLElement {
     super()
 
     this.shadow = this.attachShadow({mode: 'open'})
+    Object.assign(
+      this.style, 
+      {
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems:'center'
+      }
+    )
 
   }
 
+  
   connectedCallback() {
     const linkStyles = document.createElement('link')
     linkStyles.setAttribute('rel', 'stylesheet')
