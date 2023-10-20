@@ -7,7 +7,7 @@ import { LogoHeader } from "./logos/header/index.js";
 import { MiniBalls } from "./miniballs/index.js";
 import { OffCanvas } from "./offcanvas/index.js";
 import { Portrait } from "./portrait/index.js";
-import { Testimonial } from "./testimonial/index.js";
+import { Testimonial } from "./testimonials/index.js";
 
 customElements.define('logo-header', LogoHeader)
 customElements.define('logo-footer', LogoFooter)
