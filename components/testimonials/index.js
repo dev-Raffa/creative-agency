@@ -60,7 +60,8 @@ export class Testimonial extends HTMLElement {
       linkStyles.setAttribute('rel', 'stylesheet')
       linkStyles.setAttribute('src', 'components/testimonials/style/styles.css')
 
-      this.shadow.appendChild(this.wrap)
+      this.shadow.appendChild(linkStyles)
+      this.shadow.appendChild(wrap)
       console.log('terminou')
   }
 
