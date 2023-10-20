@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Quicksand'; 
+}
+
+testemonials-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article {
+  display: 'flex';
+  flex-direction: 'column';
+  justify-content:'center';
+  align-items:'center';
+  width: '90%';
+  max-width:'340px';
+  min-width: '290px';
+  height:'257px';
+  padding: '10px';
+  border-radius: '10px';
+  box-shadow: '0px 8px 24px 0px rgba(0, 0, 0, 0.05)'
+}
+
+.testimonial-text{
+    width: 100%;
+    font-size: '1.75rem';
+    font-weight: 400;
+}
+
+.profile-wrap {
+  display:'flex';
+  gap: '1rem';
+  width:'100%';
+  justify-content: 'center';
+  align-items: 'center'
+}
+
+figure {
+  display: 'flex';
+  width:'10rem';
+  height:'10rem';
+  border-radius: '50%';
+  overflow:'hidden'
+}
+
+h4 {
+  font-Size: '2.25rem';
+  font-weight: '600';
+  color: 'rgba(55, 125, 255, 1)'
+}
+
+.ocupation {
+  font-size: '1,375rem';
+  font-weight: '400';
+}
