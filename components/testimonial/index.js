@@ -71,7 +71,7 @@ export class Testimonial extends HTMLElement {
   }
 
   destroy(){
-   const elem = this.wrap
+   const elem = this.shadow.querySelector('article')
    console.log(elem)
   }
 }
