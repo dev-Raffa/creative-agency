@@ -1,7 +1,7 @@
 import { styles } from "./style/index.js"
 
 export class Testimonial extends HTMLElement {
-  static observedAttributes = ["isShow"]
+  static observedAttributes = ["show"]
   constructor(){
     super()
 
@@ -23,7 +23,7 @@ export class Testimonial extends HTMLElement {
   
 
   connectedCallback() {
-    if(this.hasAttribute('isShow')){
+    if(this.hasAttribute('show')){
       this.shadow = this.attachShadow({mode: 'open'})
 
       const ocupation = document.createElement('p')
